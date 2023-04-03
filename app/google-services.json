@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "296389648938",
+    "project_id": "zuberek-bc0f4",
+    "storage_bucket": "zuberek-bc0f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296389648938:android:239aaa95262f7f67695953",
+        "android_client_info": {
+          "package_name": "com.example.zuberek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296389648938-m9uc0h922aim3npmpe4jq5tpt40vvhsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVv376WckTVNBEc6b7lhVBxVByn2xcbFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296389648938-m9uc0h922aim3npmpe4jq5tpt40vvhsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
