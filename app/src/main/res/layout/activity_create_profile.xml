@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateProfile"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stwórz profil"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="75dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_cp"
+            android:background="@drawable/baseline_person_outline_24"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="ZdjProf" />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Imię"
+        android:inputType="textPersonName"
+        android:id="@+id/et_name_cp"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwiko"
+        android:inputType="textPersonName"
+        android:id="@+id/et_surname_cp"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numer telefonu"
+        android:inputType="phone"
+        android:id="@+id/et_phonenumber_cp"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:id="@+id/btn_cp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:id="@+id/progressbar_cp"/>
+
+</LinearLayout>
