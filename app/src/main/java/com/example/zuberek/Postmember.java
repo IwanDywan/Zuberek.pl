@@ -1,14 +1,7 @@
 package com.example.zuberek;
 
 public class Postmember {
-    String name;
-    String url;
-    String postUri;
-    String time;
-    String uid;
-    String type;
-
-    String description;
+    String name, url, postUri, time, uid, type,description;
 
     public Postmember(){
 
