@@ -1,23 +1,19 @@
 package com.example.zuberek;
 
 public class CatalogModel {
-    //Integer age;
+    String age;
     String  name;
-    //Integer weight;
+    String weight;
     String turl;
 
     public CatalogModel(){}
 
-    public CatalogModel(String name, String turl) {
+    public CatalogModel(String age, String name, String weight, String turl) {
+        this.age = age.toString();
         this.name = name;
         this.turl = turl;
+        this.weight = weight.toString();
     }
-    /*public CatalogModel(Integer age, String name, Integer weight, String turl) {
-        this.age = age;
-        this.name = name;
-        this.turl = turl;
-        this.weight = weight;
-    }*/
     public String getName() {
         return name;
     }
@@ -34,20 +30,20 @@ public class CatalogModel {
         this.turl = turl;
     }
 
-    /*public Integer getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setAge(String age) {
+        this.age = age.toString();
     }
 
-    public Integer getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(Integer weight) {
-        this.weight = weight;
-    }*/
+    public void setWeight(String weight) {
+        this.weight = weight.toString();
+    }
 
 }
