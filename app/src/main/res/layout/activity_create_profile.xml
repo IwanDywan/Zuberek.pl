@@ -4,81 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateProfile"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".CreateProfile">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Stwórz profil"
+        android:text="Create Profile"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textAlignment="center"
         android:gravity="center_horizontal"
         android:layout_margin="10dp"
-        android:textColor="@color/black"/>
-
+        />
     <androidx.cardview.widget.CardView
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:cardPreventCornerOverlap="false"
-        app:cardCornerRadius="75dp">
+        app:cardCornerRadius="75dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="8dp"
+        app:cardElevation="10dp">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_cp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/iv_cp"
-            android:background="@drawable/baseline_person_outline_24"
+            android:layout_gravity="center"
             android:clickable="true"
-            android:scaleType="fitCenter"
-            android:contentDescription="ZdjProf" />
+            android:src="@drawable/ic_baseline_person_24"
+            />
 
     </androidx.cardview.widget.CardView>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Imię"
-        android:inputType="textPersonName"
+        android:hint="Name"
         android:id="@+id/et_name_cp"
         android:layout_margin="4dp"
-        android:textColor="@color/black"
-        android:minHeight="48dp"/>
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nazwiko"
-        android:inputType="textPersonName"
-        android:id="@+id/et_surname_cp"
+        android:hint="Bio"
+        android:id="@+id/et_bio_cp"
         android:layout_margin="4dp"
-        android:textColor="@color/black"
-        android:minHeight="48dp"/>
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/ic_bio"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numer telefonu"
-        android:inputType="phone"
-        android:id="@+id/et_phonenumber_cp"
+        android:hint="Email"
+        android:id="@+id/et_email_cp"
         android:layout_margin="4dp"
-        android:textColor="@color/black"
-        android:minHeight="48dp"/>
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Zapisz"
-        android:id="@+id/btn_cp"
+        android:text="SAVE PROFILE"
         android:layout_margin="10dp"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
-
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"
-        android:id="@+id/progressbar_cp"/>
-
+        android:background="@drawable/button_back"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_cp"
+        />
 </LinearLayout>

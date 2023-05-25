@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "296389648938",
-    "firebase_url": "https://zuberek-bc0f4-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "zuberek-bc0f4",
-    "storage_bucket": "zuberek-bc0f4.appspot.com"
+    "project_number": "940270726459",
+    "project_id": "bison-37d00",
+    "storage_bucket": "bison-37d00.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:296389648938:android:239aaa95262f7f67695953",
+        "mobilesdk_app_id": "1:940270726459:android:3d98192dba779737eb1b1e",
         "android_client_info": {
-          "package_name": "com.example.zuberek"
+          "package_name": "com.example.bison"
         }
       },
       "oauth_client": [
         {
-          "client_id": "296389648938-m9uc0h922aim3npmpe4jq5tpt40vvhsl.apps.googleusercontent.com",
+          "client_id": "940270726459-pm27ptf71rhbas8b3bp38rg9hjtjens0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAVv376WckTVNBEc6b7lhVBxVByn2xcbFc"
+          "current_key": "AIzaSyCYFjrqJ7eem-NUNVwq7FwuIGRFNVhsT4A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "296389648938-m9uc0h922aim3npmpe4jq5tpt40vvhsl.apps.googleusercontent.com",
+              "client_id": "940270726459-pm27ptf71rhbas8b3bp38rg9hjtjens0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
