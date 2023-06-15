@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update Profile"
+        android:text="@string/update_profile"
         android:textColor="@color/rr"
         android:textSize="40sp"
         android:textAlignment="center"
@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/name"
         android:id="@+id/et_name_up"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -32,7 +32,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Bio"
+        android:hint="@string/bio_prof"
         android:id="@+id/et_bio_up"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -43,7 +43,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email_prof"
         android:id="@+id/et_email_up"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -54,7 +54,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update"
+        android:text="@string/update"
         android:layout_margin="10dp"
         android:background="@drawable/button_back"
         android:textColor="@android:color/white"

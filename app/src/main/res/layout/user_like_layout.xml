@@ -50,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="name"
+            android:text="@string/name"
             android:id="@+id/name_ll"
             android:textSize="18sp"
             android:textColor="@color/black"
@@ -66,7 +66,7 @@
             android:layout_marginLeft="65dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
-            android:text="View Profile"
+            android:text="@string/view_profile"
             android:textColor="@color/start"
             android:textSize="20sp" />
     </RelativeLayout>

@@ -36,10 +36,10 @@ public class SettingsActivity extends AppCompatActivity {
 
         if (isDarkModeOn){
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            button.setText("Disable Dark Mode");
+            //button.setText("Disable Dark Mode");
         }else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            button.setText("Enable Dark Mode");
+            //button.setText("Enable Dark Mode");
         }
 
         button.setOnClickListener(view -> {
@@ -48,13 +48,13 @@ public class SettingsActivity extends AppCompatActivity {
                 editor.putBoolean("isDarkModeOn",false);
                 editor.apply();
 
-                button.setText("Enable Dark Mode");
+                //button.setText("Enable Dark Mode");
             }else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 editor.putBoolean("isDarkModeOn",true);
                 editor.apply();
 
-                button.setText("Disable Dark Mode");
+                //button.setText("Disable Dark Mode");
             }
         });
     }

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center_horizontal"
-        android:text="Bison"
+        android:text="@string/bison"
         android:textColor="@android:color/black"
         android:textSize="20sp" />
 
@@ -55,7 +55,7 @@
                 android:textSize="20sp"
                 android:textColor="@android:color/black"
                 android:id="@+id/tv_price_product"
-                android:hint="price"
+                android:hint="@string/price"
                 android:layout_gravity="center"
                 android:gravity="center"/>
 
@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:hint="Weight"
+        android:hint="@string/weight"
         android:id="@+id/tv_productCategory_product"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -86,7 +86,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Speed"
+        android:hint="@string/speed"
         android:textSize="15dp"
         android:id="@+id/tv_location_product"
         android:layout_margin="4dp"
@@ -98,7 +98,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"
+        android:hint="@string/description"
         android:textSize="15dp"
         android:id="@+id/tv_description_product"
         android:layout_margin="4dp"
@@ -110,7 +110,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adopt Bison"
+        android:text="@string/adopt_bison"
         android:layout_margin="10dp"
         android:background="@drawable/button_back"
         android:textColor="@android:color/white"

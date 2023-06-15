@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:gravity="center_horizontal"
-        android:text="Login"
+        android:text="@string/login"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="40sp" />
@@ -33,7 +33,7 @@
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_email_input"
         android:drawablePadding="10dp"
-        android:hint="User Email"
+        android:hint="@string/user_email"
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
         android:textColor="@android:color/black"
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="10dp"
-            android:hint="Password"
+            android:hint="@string/password"
             android:background="@drawable/custom_input"
             android:drawableStart="@drawable/custom_pass_input"
             android:drawablePadding="10dp"
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/button_back"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="@color/white"
         android:textSize="25sp" />
 
@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/button_back"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="25sp" />
 
@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:textColor="@color/start"
         android:textSize="15sp"
         android:textStyle="normal" />

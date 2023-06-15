@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:hint="name"
+                android:hint="@string/name"
                 android:layout_marginBottom="4dp"
                 android:textSize="16sp"
                 android:id="@+id/tv_name_profile" />
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textcolorgrey"
-                android:hint="profession"
+                android:hint="@string/profession"
                 android:textSize="10sp"
                 android:layout_marginBottom="4dp"
                 android:id="@+id/tv_profession_profile" />
@@ -89,7 +89,7 @@
                 android:textAlignment="center"
                 android:clickable="true"
                 android:textColor="@color/start"
-                android:text="View Profile"/>
+                android:text="@string/view_profile"/>
 
 
         </LinearLayout>

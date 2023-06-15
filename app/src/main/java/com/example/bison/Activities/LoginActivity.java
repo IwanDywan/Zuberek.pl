@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText emailET,passwordET;
     Button signup_btn, login_btn;
-    ProgressBar progressBar;
     FirebaseAuth mAuth;
     TextView forgotpass;
 
@@ -53,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
 
             if( !TextUtils.isEmpty(email) && !TextUtils.isEmpty(pass) )
             {
-                progressBar.setVisibility(View.VISIBLE);
                 mAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(task -> {
                     if(task.isSuccessful())
                     {

@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Bison"
+        android:text="@string/add_bison"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -39,7 +39,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Bison Name"
+        android:hint="@string/bison_name"
         android:inputType="text"
         android:id="@+id/et_product_list"
         android:layout_margin="4dp"
@@ -51,7 +51,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Weight"
+        android:hint="@string/weight"
         android:inputType="text"
         android:id="@+id/et_product_category"
         android:layout_margin="4dp"
@@ -63,7 +63,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Speed"
+        android:hint="@string/speed"
         android:inputType="text"
         android:id="@+id/et_location_list"
         android:layout_margin="4dp"
@@ -75,7 +75,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Price"
+        android:hint="@string/price"
         android:inputType="numberDecimal"
         android:id="@+id/et_price_list"
         android:layout_margin="4dp"
@@ -87,7 +87,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:hint="Description"
+        android:hint="@string/description"
         android:inputType="textMultiLine"
         android:id="@+id/et_description_list"
         android:layout_margin="4dp"
@@ -99,7 +99,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ADD"
+        android:text="@string/add"
         android:layout_margin="10dp"
         android:background="@drawable/button_back"
         android:textColor="@android:color/white"

@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Profile"
+        android:text="@string/create_profile"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -41,7 +41,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/name_prof"
         android:id="@+id/et_name_cp"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -52,7 +52,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Bio"
+        android:hint="@string/bio_prof"
         android:id="@+id/et_bio_cp"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -63,7 +63,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email_prof"
         android:id="@+id/et_email_cp"
         android:layout_margin="4dp"
         android:drawablePadding="7dp"
@@ -74,12 +74,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SAVE PROFILE"
+        android:text="@string/save_profile"
         android:layout_margin="10dp"
         android:background="@drawable/button_back"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
-        android:id="@+id/btn_cp"
-        />
+        android:id="@+id/btn_cp" />
 </LinearLayout>

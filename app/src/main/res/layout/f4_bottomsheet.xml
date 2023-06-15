@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Post"
+        android:text="@string/create_post"
         android:textColor="@color/black"
         android:id="@+id/tv_cpf4"
         android:padding="9dp"

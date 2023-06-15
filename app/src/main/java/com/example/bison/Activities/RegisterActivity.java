@@ -46,13 +46,13 @@ public class RegisterActivity extends AppCompatActivity {
             {
                 if( pass.equals(confirm_pass))
                 {
-                    progressBar.setVisibility(View.VISIBLE);
+                    //progressBar.setVisibility(View.VISIBLE);
 
                     mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(task -> {
                         if(task.isSuccessful())
                         {
                             sendtoMain();
-                            progressBar.setVisibility(View.INVISIBLE);
+                            //progressBar.setVisibility(View.INVISIBLE);
                         }
                         else{
                             String error = Objects.requireNonNull(task.getException()).getMessage();
@@ -62,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    progressBar.setVisibility(View.INVISIBLE);
+                    //progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(RegisterActivity.this,"Password and Confirm Password not matching", Toast.LENGTH_SHORT).show();
                 }
             }

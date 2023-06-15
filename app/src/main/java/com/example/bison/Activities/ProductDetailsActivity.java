@@ -3,6 +3,7 @@ package com.example.bison.Activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -53,6 +54,10 @@ public class ProductDetailsActivity extends AppCompatActivity {
         tv_price = findViewById(R.id.tv_price_product);
 
         button = findViewById(R.id.btn_product);
+        button.setOnClickListener(view -> {
+            Intent intent = new Intent(ProductDetailsActivity.this, AdoptActivity.class);
+            startActivity(intent);
+        });
 
         ref = FirebaseDatabase.getInstance().getReference().child("All Products");
 
@@ -71,7 +76,6 @@ public class ProductDetailsActivity extends AppCompatActivity {
                     String category = Objects.requireNonNull(snapshot.child("category").getValue()).toString();
                     String productImgUrl = Objects.requireNonNull(snapshot.child("productImgUrl").getValue()).toString();
                     String location = Objects.requireNonNull(snapshot.child("location").getValue()).toString();
-                    String contact = Objects.requireNonNull(snapshot.child("contact").getValue()).toString();
                     String price = Objects.requireNonNull(snapshot.child("price").getValue()).toString();
                     String description = Objects.requireNonNull(snapshot.child("description").getValue()).toString();
 

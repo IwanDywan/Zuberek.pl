@@ -307,7 +307,7 @@ public class Fragment1 extends Fragment implements View.OnClickListener{
                             String nameResult = task.getResult().getString("name");
                             String bioResult = task.getResult().getString("bio");
                             String emailResult = task.getResult().getString("email");
-                            String webResult = task.getResult().getString("web");
+                            //String webResult = task.getResult().getString("web");
                             String url = task.getResult().getString("url");
                             String profResult = task.getResult().getString("prof");
 

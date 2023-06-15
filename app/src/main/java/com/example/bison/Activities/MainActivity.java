@@ -51,11 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
                 SharedPreferences sharedPreferences = getSharedPreferences("SharedPrefs",MODE_PRIVATE);
 
-
-
-
                 final boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn",false);
-
 
                 if (isDarkModeOn){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);

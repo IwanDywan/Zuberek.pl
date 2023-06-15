@@ -32,7 +32,6 @@ public class Viewholder_Product extends RecyclerView.ViewHolder {
         imageView = itemView.findViewById(R.id.iv_profile_item);
 
         product_result = itemView.findViewById(R.id.tv_product_item);
-        contact_result = itemView.findViewById(R.id.tv_contact_item);
         price_result = itemView.findViewById(R.id.tv_price_item);
         time_result = itemView.findViewById(R.id.tv_time_item);
 
@@ -40,7 +39,6 @@ public class Viewholder_Product extends RecyclerView.ViewHolder {
         Picasso.get().load(productImgUrl).into(productView);
 
         product_result.setText(product);
-        contact_result.setText(contact);
         price_result.setText(price);
         time_result.setText(time);
 

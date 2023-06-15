@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="@string/name_img"
         android:id="@+id/tv_name_image"
         android:textSize="24sp"
         android:textColor="@android:color/white"/>
@@ -28,7 +28,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Edit"
+        android:text="@string/edit_img"
         android:id="@+id/btn_edit_iv"
         android:background="@drawable/button_back"
         android:textColor="@android:color/white"
@@ -37,7 +37,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete Image"
+        android:text="@string/delete_image"
         android:layout_marginTop="10dp"
         android:id="@+id/btn_delete_iv"
         android:background="@drawable/button_back"

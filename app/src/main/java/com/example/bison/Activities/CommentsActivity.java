@@ -120,7 +120,7 @@ public class CommentsActivity extends AppCompatActivity {
                         age_result = task.getResult().getString("age");
                         bio_result = task.getResult().getString("bio");
                         email_result = task.getResult().getString("email");
-                        web_result = task.getResult().getString("website");
+                        //web_result = task.getResult().getString("website");
                         Url = task.getResult().getString("url");
                         uid = task.getResult().getString("uid");
                     }

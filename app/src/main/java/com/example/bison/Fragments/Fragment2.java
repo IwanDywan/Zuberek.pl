@@ -62,7 +62,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
         String currentUserid = Objects.requireNonNull(user).getUid();
 
         imageView = requireActivity().findViewById(R.id.iv_f2);
-        fb = requireActivity().findViewById(R.id.floatingActionButton);
+        //fb = requireActivity().findViewById(R.id.floatingActionButton);
         reference = db.collection("user").document(currentUserid);
 
         recyclerView = requireActivity().findViewById(R.id.rv_f2);
@@ -72,7 +72,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
         databaseReference = database.getReference("All Products");
 
 
-        fb.setOnClickListener(this);
+        //fb.setOnClickListener(this);
         imageView.setOnClickListener(this);
 
         FirebaseRecyclerOptions<All_ProductMember> options =
@@ -121,12 +121,11 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
         switch (view.getId())
         {
             case R.id.iv_f2:
-
                 break;
-            case R.id.floatingActionButton:
+            /*case R.id.floatingActionButton:
                 Intent intent = new Intent(getActivity(), AddListingActivity.class);
                 startActivity(intent);
-                break;
+                break;*/
         }
     }
 

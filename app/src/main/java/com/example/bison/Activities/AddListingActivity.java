@@ -35,7 +35,7 @@ import java.util.Objects;
 
 public class AddListingActivity extends AppCompatActivity {
 
-    EditText etProduct,etCategory,etLocation,etContact,etPrice,etDescription;
+    EditText etProduct,etCategory,etLocation,etPrice,etDescription;
     ImageView productImage;
     Button button;
     Uri imageUri;
@@ -116,7 +116,6 @@ public class AddListingActivity extends AppCompatActivity {
     }
 
 
-    //ager database theke kichu user er data nitesi
     @Override
     protected void onStart() {
         super.onStart();
@@ -145,7 +144,6 @@ public class AddListingActivity extends AppCompatActivity {
         String product = etProduct.getText().toString();
         String category = etCategory.getText().toString();
         String location = etLocation.getText().toString();
-        String contact = etContact.getText().toString();
         String price = etPrice.getText().toString();
         String description = etDescription.getText().toString();
 
@@ -161,7 +159,7 @@ public class AddListingActivity extends AppCompatActivity {
         String time = savedate +":"+ savetime;
 
 
-        if( !TextUtils.isEmpty(product) && !TextUtils.isEmpty(category) && !TextUtils.isEmpty(location) && !TextUtils.isEmpty(contact) && !TextUtils.isEmpty(price)
+        if( !TextUtils.isEmpty(product) && !TextUtils.isEmpty(category) && !TextUtils.isEmpty(location)&& !TextUtils.isEmpty(price)
                 && !TextUtils.isEmpty(description) && imageUri != null )
         {
             final StorageReference reference = storageReference.child(System.currentTimeMillis()+ "."+getFileExt(imageUri));
@@ -189,7 +187,6 @@ public class AddListingActivity extends AppCompatActivity {
                     member.setProduct(product);
                     member.setCategory(category);
                     member.setLocation(location);
-                    member.setContact(contact);
                     member.setPrice(price);
                     member.setDescription(description);
                     member.setProductImgUrl(downloadUri.toString());

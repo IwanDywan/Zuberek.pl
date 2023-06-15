@@ -63,9 +63,9 @@
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:textColor="@android:color/black"
-                        android:id="@+id/tv_price_item"
-                        android:hint="price"
-                        android:layout_gravity="center"
+                        android:id="@+id/tv_product_item"
+                        android:paddingLeft="5dp"
+                        android:hint="@string/bison"
                         android:gravity="center"/>
 
 
@@ -73,42 +73,22 @@
 
             </LinearLayout>
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@android:color/black"
-                android:id="@+id/tv_product_item"
-                android:paddingLeft="5dp"
-                android:hint="product"
-                android:gravity="left"/>
+                android:id="@+id/tv_price_item"
+                android:hint="@string/price"
+                android:layout_gravity="left"
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:paddingLeft="5dp"
-                    android:textColor="@android:color/black"
-                    android:hint="contact-"
-                    android:gravity="left"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:paddingLeft="5dp"
-                    android:textColor="@android:color/black"
-                    android:id="@+id/tv_contact_item"
-                    android:hint="contact"
-                    android:gravity="left"/>
-
-
             </LinearLayout>
 
 
@@ -124,7 +104,7 @@
                     android:textSize="15sp"
                     android:paddingLeft="5dp"
                     android:textColor="@android:color/black"
-                    android:hint="by - "
+                    android:hint="@string/by"
                     android:layout_gravity="right"
                     android:gravity="right"/>
 
@@ -169,7 +149,7 @@
                         android:textSize="15sp"
                         android:textColor="@android:color/darker_gray"
                         android:id="@+id/tv_time_item"
-                        android:hint="time"
+                        android:hint="@string/time"
                         android:layout_gravity="center_vertical|right"
                         android:paddingRight="5dp"
                         android:gravity="right"/>

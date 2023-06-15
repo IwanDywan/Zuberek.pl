@@ -39,9 +39,8 @@ public class CreateProfile extends AppCompatActivity {
 
     CircleImageView imageView;
 
-    EditText etName,etBio,etProfession,etEmail,etWeb;
+    EditText etName,etBio,etEmail;
     Button button;
-    ProgressBar progressBar;
 
     Uri imageUri;
     UploadTask uploadTask;
@@ -110,14 +109,10 @@ public class CreateProfile extends AppCompatActivity {
 
         String name = etName.getText().toString();
         String bio = etBio.getText().toString();
-        String web = etWeb.getText().toString();
-        String prof = etProfession.getText().toString();
         String email = etEmail.getText().toString();
 
-        if( !TextUtils.isEmpty(name) && !TextUtils.isEmpty(bio) && !TextUtils.isEmpty(web) && !TextUtils.isEmpty(prof)
-                && !TextUtils.isEmpty(email) && imageUri != null )
+        if( !TextUtils.isEmpty(name) && !TextUtils.isEmpty(bio) && !TextUtils.isEmpty(email) && imageUri != null )
         {
-            progressBar.setVisibility(View.VISIBLE);
             final StorageReference reference = storageReference.child(System.currentTimeMillis()+ "."+getFileExt(imageUri));
             uploadTask = reference.putFile(imageUri);
 
@@ -136,16 +131,13 @@ public class CreateProfile extends AppCompatActivity {
 
                     Map<String,String > profile = new HashMap<>();
                     profile.put("name",name.toUpperCase());
-                    profile.put("prof",prof);
                     profile.put("url",downloadUri.toString());
                     profile.put("email",email);
-                    profile.put("web",web);
                     profile.put("bio",bio);
                     profile.put("uid",currentUserId);
                     profile.put("privacy","Public");
 
                     member.setName(name);
-                    member.setProf(prof);
                     member.setUid(currentUserId);
                     member.setUrl(downloadUri.toString());
 
@@ -153,7 +145,6 @@ public class CreateProfile extends AppCompatActivity {
 
                     documentReference.set(profile)
                             .addOnSuccessListener(unused -> {
-                                progressBar.setVisibility(View.INVISIBLE);
                                 Toast.makeText(CreateProfile.this,"Profile Created", Toast.LENGTH_SHORT).show();
 
                                 Handler handler = new Handler();

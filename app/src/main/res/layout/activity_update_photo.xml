@@ -34,7 +34,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose a photo"
+        android:text="@string/choose_a_photo"
         android:id="@+id/btn_choosephoto"
         android:background="@drawable/button_back"
         android:textColor="@color/white"
@@ -44,7 +44,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update photo"
+        android:text="@string/update_photo"
         android:id="@+id/btn_updatephoto"
         android:background="@drawable/button_back"
         android:textColor="@color/white"

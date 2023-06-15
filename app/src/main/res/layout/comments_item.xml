@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_name_comment_item"
                 android:textColor="@color/black"
-                android:text="Name"
+                android:text="@string/name"
                 android:paddingStart="3dp"
                 android:textSize="14sp"/>
 
@@ -67,7 +67,7 @@
                 android:id="@+id/tv_time_comment_item"
                 android:textColor="@color/start"
                 android:textAlignment="viewEnd"
-                android:text="Time"
+                android:text="@string/time"
                 android:textStyle="bold"
                 android:paddingStart="10dp"
                 android:textSize="8sp"/>
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comment"
+            android:text="@string/comment"
             android:textColor="@color/black"
             android:textSize="11sp"
             android:layout_marginLeft="29dp"
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="likes"
+                android:text="@string/likes"
                 android:textSize="12sp"
                 android:textColor="@color/black"
                 android:clickable="true"
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Delete"
+                android:text="@string/delete"
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:textColor="@color/start"

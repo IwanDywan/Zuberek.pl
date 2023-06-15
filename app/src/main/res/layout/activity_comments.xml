@@ -43,7 +43,7 @@
             android:id="@+id/name_comments_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/name_comments"
             android:padding="4dp"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -68,7 +68,7 @@
             android:id="@+id/btn_comments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="post"
+            android:text="@string/post_comment"
             android:background="@drawable/button_back"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -78,7 +78,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Add Comment"
+            android:hint="@string/add_comment_post"
             android:paddingStart="10dp"
             android:layout_marginLeft="3dp"
             android:id="@+id/et_comments"
